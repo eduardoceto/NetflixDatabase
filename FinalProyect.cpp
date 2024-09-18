@@ -124,7 +124,7 @@ Series *ptrs;
 
 int main(){ 
 ifstream m; 
-m.open("/Users/eduardo/Library/CloudStorage/Dropbox/Programacion/C++/Object oriented Program/Final Proyect OOP/movies.csv"); // Open the file and change the path
+m.open("movies.csv"); // Open the file and change the path
 string line, value;
 string row[6];
 int i,j;
@@ -143,7 +143,7 @@ while (getline(m, line)){ // Read the file
 m.close();
 
 ifstream s;
-s.open("/Users/eduardo/Library/CloudStorage/Dropbox/Programacion/C++/Object oriented Program/Final Proyect OOP/series.csv"); // Open the file and change the path
+s.open("series.csv"); // Open the file and change the path
 Series *ser = new Series[29]; // Create an object of the class Series
 j = 0;
 while (getline(s, line)){ // Read the file
